@@ -9,7 +9,7 @@ struct list
     struct list *next;
 };
 typedef struct list node;
-node *ptr, *start;
+node *ptr, *start = NULL;
 
 void insert_at_beginning();
 void insert_at_end();
