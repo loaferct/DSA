@@ -130,8 +130,9 @@ void insert_at_sp_position()
     scanf("%d",&position);
     printf("Enter the data to be Inserted: ");
     scanf("%d",&item->info);
-    while(count<position)
+    while(count<position-1)
     {
+        
         temp = temp->next;
         count++;
     }
@@ -231,6 +232,7 @@ void display()
         printf("%d\t",temp->info);
         temp=temp->next;
     }
+    printf("\n");
 }
 
 void search()
